@@ -9,6 +9,7 @@ Use it from docker hub https://hub.docker.com/repository/docker/smirl/tools
 - `bind-tools` - (`dig`, etc.)
 - [`jq`](https://stedolan.github.io/jq/)
 - [`evans`](https://github.com/ktr0731/evans)
+- [`ghz`](https://ghz.sh/)
 - [`awscli`](https://aws.amazon.com/cli/)
 
 ## Included proto files
