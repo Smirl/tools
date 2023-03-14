@@ -7,14 +7,12 @@ jobs:
   container-job:
     runs-on: ubuntu-latest
     container:
-      image: smirl/tools:v1.2.0
+      image: ubuntu:22.04
     steps:
       - name: Check for dockerenv file
         run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
       - name: python
         run: python --version || true
-      - name: CURL httpbin
-        run: curl -v https://httpbin.org/get
       - name: checkout
         uses: actions/checkout@v3
       - name: setup python
