@@ -10,6 +10,6 @@ jobs:
       image: smirl/tools:v1.2.0
     steps:
       - name: Check for dockerenv file
-        run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)\
+        run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
       - name: CURL httpbin
         run: curl -v https://httpbin.org/get
