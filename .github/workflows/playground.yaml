@@ -4,10 +4,10 @@ on:
   push:
 
 jobs:
-  container-job:
+  build-and-test:
     runs-on: ubuntu-latest
-    container:
-      image: ubuntu:22.04
+    # container:
+    #   image: ubuntu:22.04
     steps:
       - name: Check for dockerenv file
         run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
@@ -21,3 +21,14 @@ jobs:
           python-version: '3.10' 
       - name: python
         run: python --version
+
+  # docker:
+  #   uses: actions/workflows/.github/workflows/docker.yml@v1
+  #   with:
+  #     image: smirl/tools
+
+  # slingshot:
+  #   uses: actions/workflows/.github/workflows/slingshot.yml@v1
+  #   with:
+  #     service_name: smirl-tools
+  #     slingshot_file: .slingshot.yaml
