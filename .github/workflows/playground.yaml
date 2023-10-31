@@ -6,22 +6,24 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    container:
-      image: ubuntu:22.04
-      volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
     steps:
-      - name: install docker
-        run: |
-          apt-get update
-          apt-get install -y ca-certificates curl gnupg lsb-release
-          mkdir -m 0755 -p /etc/apt/keyrings
-          curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-          echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
-          apt-get update
-          apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-      - name: run a docker container
-        run: docker run --rm alpine echo "hello"
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: python path
+        run: which python
+      - name: list site-packages
+        run: ls -l $(dirname `dirname $(which python)`)/lib/python3.11/site-packages/ 
+      - name: list packages
+        run: pip list
+      - name: install something
+        run: pip install flask
+      - name: list site-packages
+        run: ls -l $(dirname `dirname $(which python)`)/lib/python3.11/site-packages/ 
+      - name: list packages
+        run: pip list
+
 
   # docker:
   #   uses: actions/workflows/.github/workflows/docker.yml@v1
