@@ -5,12 +5,14 @@ Use it from docker hub https://hub.docker.com/repository/docker/smirl/tools
 
 ## Included tools
 
-- `curl`
-- `bind-tools` - (`dig`, etc.)
-- [`jq`](https://stedolan.github.io/jq/)
+- [`awscli`](https://aws.amazon.com/cli/)
 - [`evans`](https://github.com/ktr0731/evans)
 - [`ghz`](https://ghz.sh/)
-- [`awscli`](https://aws.amazon.com/cli/)
+- [`hey`](https://github.com/rakyll/hey)
+- [`jq`](https://stedolan.github.io/jq/)
+- [`yq`](https://github.com/mikefarah/yq)
+- `bind-tools` - (`dig`, etc.)
+- `curl`
 
 ## Included proto files
 
