@@ -1,7 +1,7 @@
-FROM --platform=linux/amd64 alpine:3.20.3
+FROM --platform=linux/amd64 alpine:3.21.3
 WORKDIR /opt/
 ENV ENV="/root/.profile"
-RUN apk add --no-cache curl bind-tools jq yq hey aws-cli && \
+RUN apk update && apk upgrade && apk add --no-cache curl bind-tools jq yq hey aws-cli && \
     wget https://github.com/ktr0731/evans/releases/download/v0.10.11/evans_linux_amd64.tar.gz && \
     tar -xvf evans_linux_amd64.tar.gz &&    \
     mv ./evans /bin/ && \
