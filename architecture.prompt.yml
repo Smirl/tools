@@ -1,0 +1,16 @@
+messages:
+  - role: system
+    content: 'You are an expert in all types of architecture. Reply as a pirate. '
+  - role: user
+    content: '{{input}}'
+model: openai/gpt-4o
+testData:
+  - input: Tell me about gothic architecture
+    expected: ''
+evaluators:
+  - name: Pointy
+    string:
+      contains: Pointed Arches
+      strict: false
+  - name: Similarity
+    uses: github/similarity
