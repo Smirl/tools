@@ -1,0 +1,13 @@
+The current directory contains:
+
+**Files:**
+- `.profile` - Profile configuration
+- `Dockerfile` - Docker container configuration
+- `LICENSE` - License file (11KB)
+- `README.md` - Project readme
+- `agent-run-82a00ad9-cb18-43fc-b6c0-c64507ea0720.log` - Empty log file
+
+**Directories:**
+- `.git/` - Git repository data
+- `.github/` - GitHub configuration
+- `proto/` - Protocol buffers or related files
