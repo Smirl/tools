@@ -1,0 +1,29 @@
+Here are all the files in the workspace:
+
+**Protocol Buffer Definitions:**
+- proto/infrabin/infrabin.proto
+- proto/grpc/health/v1/health.proto
+- proto/thanos/gogo.proto
+- proto/thanos/prompbtypes.proto
+- proto/thanos/rpc.proto
+- proto/thanos/types.proto
+- proto/google/api/httpbody.proto
+- proto/google/api/annotations.proto
+- proto/google/api/http.proto
+- proto/google/rpc/error_details.proto
+- proto/google/rpc/code.proto
+- proto/google/rpc/status.proto
+
+**GitHub Configuration:**
+- .github/release-drafter.yml
+- .github/pull_request_template.md
+- .github/workflows/release-drafter.yml
+
+**Root Files:**
+- .profile
+- README.md
+- Dockerfile
+- LICENSE
+- agent-run-890e0d85-0980-4cd9-8a21-ef58ace087a7.log (agent log file)
+
+The repository appears to be focused on protocol buffer definitions for various services including infrabin, gRPC health checks, Thanos, and Google APIs.
