@@ -1,0 +1,5 @@
+Done! I've listed all the files in the repository and saved them to `files.txt`. The repository contains 20 files, including:
+- GitHub configuration files (pull request template, release drafter)
+- A Dockerfile
+- Documentation (README, LICENSE)
+- Protocol buffer definitions in the `proto/` directory for various services (Google APIs, gRPC health check, infrabin, and Thanos)
