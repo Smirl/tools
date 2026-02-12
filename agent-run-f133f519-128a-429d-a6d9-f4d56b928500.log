@@ -1,0 +1,10 @@
+Here are the files in the current directory:
+
+- **Dockerfile** - Docker configuration file
+- **LICENSE** - License file (11KB)
+- **README.md** - Project documentation
+- **.profile** - Shell profile configuration
+- **agent-run-f133f519-128a-429d-a6d9-f4d56b928500.log** - Empty log file
+- **.git/** - Git repository directory
+- **.github/** - GitHub configuration directory
+- **proto/** - Protocol buffers directory
