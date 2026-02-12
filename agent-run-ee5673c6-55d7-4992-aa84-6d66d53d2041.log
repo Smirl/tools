@@ -1,0 +1,13 @@
+The repository contains the following files and directories:
+
+**Files:**
+- `.profile` - Shell profile configuration
+- `Dockerfile` - Docker container configuration
+- `LICENSE` - License file (11KB)
+- `README.md` - Project documentation
+- `agent-run-ee5673c6-55d7-4992-aa84-6d66d53d2041.log` - Empty log file (untracked)
+
+**Directories:**
+- `.git/` - Git repository metadata
+- `.github/` - GitHub configuration
+- `proto/` - Protocol buffers or prototype files
