@@ -1,0 +1,9 @@
+Perfect! I've upgraded all the tools in the Dockerfile to their latest versions:
+
+**Updates made:**
+- Alpine Linux: 3.21.3 → 3.23.3 (latest stable release from January 27, 2026)
+- ghz: v0.120.0 → v0.121.0 (latest release from December 7, 2025)
+- Evans: v0.10.11 (already on latest version)
+- APK packages (curl, bind-tools, jq, yq, hey, aws-cli): These will automatically pull the latest versions available in Alpine 3.23.3's repositories when the image is built
+
+The Dockerfile:1 has been updated with these latest versions.
