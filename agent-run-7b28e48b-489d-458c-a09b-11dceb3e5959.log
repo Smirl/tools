@@ -1,0 +1,38 @@
+## Repository Summary
+
+This is a **Kubernetes debugging toolkit Docker image** called `smirl/tools` that packages essential CLI utilities into a lightweight Alpine Linux container for troubleshooting and testing.
+
+### Purpose
+Provides a containerized Swiss Army knife for Kubernetes developers and operators, focusing on gRPC service debugging, API testing, and infrastructure troubleshooting.
+
+### Technology Stack
+- **Base**: Alpine Linux 3.21.3
+- **Tools**: awscli, evans (gRPC client), ghz (gRPC load testing), hey (HTTP load testing), jq, yq, bind-tools, curl
+- **Protocols**: Protocol Buffers (proto3) with gRPC support
+
+### Project Structure
+- `Dockerfile` - Multi-stage build for minimal image size
+- `proto/` - Protocol Buffer definitions for:
+  - Google API (HTTP-gRPC transcoding)
+  - gRPC Health checking
+  - Thanos (metrics aggregation)
+  - Infrabin (infrastructure debugging service)
+- `.github/` - Release automation via GitHub Actions
+- `.profile` - Interactive shell setup
+
+### Key Features
+1. **gRPC Testing**: Interactive client (evans) and load testing (ghz)
+2. **HTTP Testing**: Load generation (hey) and requests (curl)
+3. **Data Processing**: JSON (jq) and YAML (yq) manipulation
+4. **DNS Debugging**: bind-tools for network troubleshooting
+5. **Cloud Integration**: AWS CLI for cloud resource management
+6. **Service Protocols**: Pre-packaged proto files for health checks, monitoring, and debugging services
+
+### Use Cases
+- Kubernetes pod debugging (as sidecar or standalone container)
+- gRPC service inspection and load testing
+- REST API testing and benchmarking
+- DNS and network troubleshooting
+- Monitoring system integration testing (Thanos/Prometheus)
+
+The project is actively maintained with recent additions of hey, yq, and automated release drafting. It's licensed under Apache 2.0 and available on Docker Hub.
