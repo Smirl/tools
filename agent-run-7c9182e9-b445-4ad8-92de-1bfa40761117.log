@@ -1,0 +1,23 @@
+Based on the README, this is a lightweight Docker image for debugging Kubernetes. Here are the tools included in the repo:
+
+## Included Tools
+
+- **`awscli`** - AWS Command Line Interface
+- **`evans`** - gRPC client (interactive)
+- **`ghz`** - gRPC benchmarking and load testing tool
+- **`hey`** - HTTP load generator
+- **`jq`** - JSON processor
+- **`yq`** - YAML processor
+- **`bind-tools`** - DNS utilities like `dig`
+- **`curl`** - HTTP client
+
+## Included Proto Files
+
+The repository also includes packaged proto files for gRPC services (in case servers don't have reflection enabled):
+
+- **`thanos`** - Thanos gRPC services
+- **`grpc.health.v1`** - gRPC health checking protocol
+- **`infrabin`** - go-infrabin gRPC services
+- **`google.api.http`** - Google API HTTP transcoding
+
+The Docker image is available at https://hub.docker.com/repository/docker/smirl/tools
