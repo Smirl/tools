@@ -1,0 +1,8 @@
+I've successfully upgraded the tools in the Dockerfile:
+
+**Changes made:**
+1. **Alpine Linux**: 3.21.3 → 3.23.3 (Dockerfile:1)
+2. **ghz**: v0.120.0 → v0.121.0 (Dockerfile:8)
+3. **evans**: v0.10.11 (no change, already latest)
+
+The other tools (curl, bind-tools, jq, yq, hey, aws-cli) are managed by Alpine's package manager and will automatically get the latest versions available in Alpine 3.23.3 when `apk update && apk upgrade` runs.
