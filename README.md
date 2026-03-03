@@ -5,14 +5,16 @@ Use it from docker hub https://hub.docker.com/repository/docker/smirl/tools
 
 ## Included tools
 
-- [`awscli`](https://aws.amazon.com/cli/)
-- [`evans`](https://github.com/ktr0731/evans)
-- [`ghz`](https://ghz.sh/)
-- [`hey`](https://github.com/rakyll/hey)
-- [`jq`](https://stedolan.github.io/jq/)
-- [`yq`](https://github.com/mikefarah/yq)
-- `bind-tools` - (`dig`, etc.)
-- `curl`
+| Tool | Version | Description |
+|------|---------|-------------|
+| [`awscli`](https://aws.amazon.com/cli/) | latest | AWS command line interface |
+| [`evans`](https://github.com/ktr0731/evans) | v0.10.11 | gRPC client |
+| [`ghz`](https://ghz.sh/) | v0.120.0 | gRPC benchmarking tool |
+| [`hey`](https://github.com/rakyll/hey) | latest | HTTP load generator |
+| [`jq`](https://stedolan.github.io/jq/) | latest | JSON processor |
+| [`yq`](https://github.com/mikefarah/yq) | latest | YAML/JSON/XML processor |
+| [`bind-tools`](https://www.isc.org/bind/) | latest | DNS utilities (`dig`, `nslookup`, etc.) |
+| `curl` | latest | HTTP client |
 
 ## Included proto files
 
