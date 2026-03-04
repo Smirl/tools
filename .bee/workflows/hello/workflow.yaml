@@ -1,0 +1,19 @@
+workflows_dir: ./.bee/workflows/hello
+workspace: ./.work/hello
+
+agents:
+  - id: assistant
+    model: sonnet
+    conversation_manager: sliding_window
+    tools: []
+    system_prompt: "You are a helpful assistant."
+    user_prompt: "Say hello to the user!"
+
+workflows:
+  - id: hello
+    type: graph
+    entry_points: [assistant]
+    nodes:
+      - id: assistant
+        kind: agent
+        ref: assistant
