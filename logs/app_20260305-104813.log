@@ -1,0 +1,28 @@
+2026-03-05 10:48:13 [INFO] root: 📝 Logging to file: logs/app_20260305-104813.log
+2026-03-05 10:48:13 [INFO] bee_cli.telemetry: Telemetry configured: bee-cli -> logs/otel_traces_20260305-104813.jsonl
+2026-03-05 10:48:13 [INFO] bee_cli.main: Using bundled config as base with local workflows from .bee
+2026-03-05 10:48:13 [INFO] bee.workflow.config_loader: Loading workflow configuration from .bee
+2026-03-05 10:48:13 [INFO] bee.workflow.config_loader: Loading base config from /opt/bee/lib/python3.11/site-packages/bee_cli/.bee/bee.yaml
+2026-03-05 10:48:13 [INFO] bee.workflow.config_loader: Loading specific workflow: hello
+2026-03-05 10:48:13 [INFO] bee.workflow.config_loader: Loaded workflow from workflows/hello/workflow.yaml: 1 workflows, 1 agents
+2026-03-05 10:48:13 [INFO] bee.workflow.config_loader: Successfully loaded configuration: 1 workflows, 1 agents, 2 models
+2026-03-05 10:48:13 [INFO] bee_cli.main: Loaded 1 workflow(s), 2 models
+2026-03-05 10:48:13 [INFO] bee_cli.main: Executing workflow: hello
+2026-03-05 10:48:13 [INFO] bee_cli.main: Using user_prompt: say hi...
+2026-03-05 10:48:13 [INFO] bee.workflow.builder: Enabled extended thinking for Anthropic model: @bedrock-sandbox/eu.anthropic.claude-sonnet-4-5-20250929-v1:0 (budget: 4096 tokens)
+2026-03-05 10:48:13 [INFO] bee.workflow.builder: Configured Anthropic model 'sonnet' with custom endpoint: https://modelops-gateway.cellsdev-1.skyscannerplatform.net
+2026-03-05 10:48:13 [INFO] bee.workflow.runner: 🚀 Starting streaming workflow 'hello' with 1 node(s)
+2026-03-05 10:48:13 [INFO] bee.workflow.runner:    Entry points: assistant
+2026-03-05 10:48:13 [INFO] bee.workflow.runner: 📊 Streaming graph events with user_prompt: say hi...
+2026-03-05 10:48:13 [INFO] strands.telemetry.metrics: Creating Strands MetricsClient
+2026-03-05 10:48:13 [INFO] bee.workflow.runner:    🔄 Node started: assistant
+2026-03-05 10:48:15 [INFO] httpx: HTTP Request: POST https://modelops-gateway.cellsdev-1.skyscannerplatform.net/v1/messages "HTTP/1.1 200 OK"
+2026-03-05 10:48:15 [INFO] bee.workflow.runner:    🔍 Processing multiagent_node_stop for node 'assistant'
+2026-03-05 10:48:15 [INFO] bee.workflow.runner:    🔍 Result type: AgentResult
+2026-03-05 10:48:15 [INFO] bee.workflow.runner:    🔍 Content preview: Hi! How can I help you today?
+...
+2026-03-05 10:48:15 [INFO] bee.workflow.runner:    ✅ Processed structured output from node 'assistant'
+2026-03-05 10:48:15 [INFO] bee.workflow.runner:    📋 State after processing: repo_type=None
+2026-03-05 10:48:15 [INFO] bee.workflow.runner:    ✅ Node completed: assistant
+2026-03-05 10:48:15 [INFO] bee.workflow.runner: ✅ Streaming workflow completed successfully
+2026-03-05 10:48:15 [INFO] bee_cli.main: Workflow completed: hello

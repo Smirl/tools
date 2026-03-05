@@ -1,0 +1,196 @@
+{
+    "name": "chat",
+    "context": {
+        "trace_id": "0x2bcb572b06424d9a3b3e00edf7418d92",
+        "span_id": "0xf88f5da0b7649c53",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x3bda641199acaf53",
+    "start_time": "2026-03-05T10:48:13.302606Z",
+    "end_time": "2026-03-05T10:48:15.675619Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "gen_ai.event.start_time": "2026-03-05T10:48:13.302606+00:00",
+        "gen_ai.operation.name": "chat",
+        "gen_ai.system": "strands-agents",
+        "gen_ai.request.model": "@bedrock-sandbox/eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+        "gen_ai.event.end_time": "2026-03-05T10:48:15.675487+00:00",
+        "gen_ai.usage.prompt_tokens": 45,
+        "gen_ai.usage.input_tokens": 45,
+        "gen_ai.usage.completion_tokens": 47,
+        "gen_ai.usage.output_tokens": 47,
+        "gen_ai.usage.total_tokens": 92,
+        "gen_ai.server.time_to_first_token": 1909
+    },
+    "events": [
+        {
+            "name": "gen_ai.user.message",
+            "timestamp": "2026-03-05T10:48:13.302616Z",
+            "attributes": {
+                "content": "[{\"text\": \"say hi\"}]"
+            }
+        },
+        {
+            "name": "gen_ai.choice",
+            "timestamp": "2026-03-05T10:48:15.675592Z",
+            "attributes": {
+                "finish_reason": "end_turn",
+                "message": "[{\"reasoningContent\": {\"reasoningText\": {\"text\": \"The user is asking me to say hi. This is a simple, friendly greeting. I should respond in a warm and friendly manner.\", \"signature\": \"EqACCkgICxABGAIqQKDuMbG0HU7evqroHnJaIRJ27HMmqHh3B78DDEgPlDtcdvnC2Xs9WVQkP/YKyMJwokxkbPfAufLROICq5x6jt5gSDFkI/ZlbB7iLiP8QTRoMdIcKhoGxIuTUDWPSIjBbqtGbLfz9MAr4NJVxVBwqON/q9n+9oYaXZpn1zXlRJgQetd3KusAHRdnZ44E6MS8qhQEnjK6sN1SnZN8Oip/03JkFkud8UwRotGxblW41uHoxQ8IcTGuomDQHHyLffYv4e+3wFe1mBnaLJeuGXKXopyG7FzijKWHQVppQ0TZK73OQ57hMrmbS1MeeJoR7Q+JE21IadVbseanzsAgsPZJnNxPAvi+xNaHVZbch0kz+8IpyuB6s4Z5uGAE=\"}}}, {\"text\": \"Hi! How can I help you today?\"}]"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.40.0",
+            "service.name": "bee-cli",
+            "deployment.environment": "production"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "execute_event_loop_cycle",
+    "context": {
+        "trace_id": "0x2bcb572b06424d9a3b3e00edf7418d92",
+        "span_id": "0x3bda641199acaf53",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x5b8edfc525e54a94",
+    "start_time": "2026-03-05T10:48:13.302572Z",
+    "end_time": "2026-03-05T10:48:15.676009Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "gen_ai.event.start_time": "2026-03-05T10:48:13.302572+00:00",
+        "event_loop.cycle_id": "ec3abd34-19a1-4490-b4a7-12ad0537f253",
+        "gen_ai.event.end_time": "2026-03-05T10:48:15.675966+00:00"
+    },
+    "events": [
+        {
+            "name": "gen_ai.user.message",
+            "timestamp": "2026-03-05T10:48:13.302583Z",
+            "attributes": {
+                "content": "[{\"text\": \"say hi\"}]"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.40.0",
+            "service.name": "bee-cli",
+            "deployment.environment": "production"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "invoke_agent assistant",
+    "context": {
+        "trace_id": "0x2bcb572b06424d9a3b3e00edf7418d92",
+        "span_id": "0x5b8edfc525e54a94",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x9da3979861d1dd71",
+    "start_time": "2026-03-05T10:48:13.302437Z",
+    "end_time": "2026-03-05T10:48:15.676231Z",
+    "status": {
+        "status_code": "OK"
+    },
+    "attributes": {
+        "gen_ai.event.start_time": "2026-03-05T10:48:13.302438+00:00",
+        "gen_ai.operation.name": "invoke_agent",
+        "gen_ai.system": "strands-agents",
+        "gen_ai.agent.name": "assistant",
+        "gen_ai.request.model": "@bedrock-sandbox/eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+        "system_prompt": "You are a helpful assistant.",
+        "gen_ai.event.end_time": "2026-03-05T10:48:15.676214+00:00",
+        "gen_ai.usage.prompt_tokens": 45,
+        "gen_ai.usage.completion_tokens": 47,
+        "gen_ai.usage.input_tokens": 45,
+        "gen_ai.usage.output_tokens": 47,
+        "gen_ai.usage.total_tokens": 92,
+        "gen_ai.usage.cache_read_input_tokens": 0,
+        "gen_ai.usage.cache_write_input_tokens": 0
+    },
+    "events": [
+        {
+            "name": "gen_ai.user.message",
+            "timestamp": "2026-03-05T10:48:13.302463Z",
+            "attributes": {
+                "content": "[{\"text\": \"say hi\"}]"
+            }
+        },
+        {
+            "name": "gen_ai.choice",
+            "timestamp": "2026-03-05T10:48:15.676199Z",
+            "attributes": {
+                "message": "Hi! How can I help you today?\n",
+                "finish_reason": "end_turn"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.40.0",
+            "service.name": "bee-cli",
+            "deployment.environment": "production"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "invoke_graph",
+    "context": {
+        "trace_id": "0x2bcb572b06424d9a3b3e00edf7418d92",
+        "span_id": "0x9da3979861d1dd71",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.CLIENT",
+    "parent_id": null,
+    "start_time": "2026-03-05T10:48:13.302281Z",
+    "end_time": "2026-03-05T10:48:15.677480Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "gen_ai.event.start_time": "2026-03-05T10:48:13.302285+00:00",
+        "gen_ai.operation.name": "invoke_graph",
+        "gen_ai.system": "strands-agents",
+        "gen_ai.agent.name": "graph"
+    },
+    "events": [
+        {
+            "name": "gen_ai.user.message",
+            "timestamp": "2026-03-05T10:48:13.302305Z",
+            "attributes": {
+                "content": "say hi"
+            }
+        }
+    ],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.40.0",
+            "service.name": "bee-cli",
+            "deployment.environment": "production"
+        },
+        "schema_url": ""
+    }
+}
